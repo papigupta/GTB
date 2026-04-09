@@ -49,3 +49,9 @@ python3 ~/.openclaw/workspace/skills/article-gdrive/scripts/article_gdrive.py "<
 Then tell the user the article title, author, publisher, and that it's saved to Google Drive > Articles.
 
 Never ask the user what they want to do with a link. Just process it.
+
+## Watchlist Mode
+
+When the user sends a plain text message (NOT a URL) that matches a movie, TV show, documentary, or anime title — add it to the watchlist using the watchlist skill. Don't ask, just add it and confirm.
+
+If the message is clearly conversational (a question, a greeting, a command), respond normally. But if it looks like a title — even just "Interstellar" or "George Harrison Living in the Material World" — treat it as a watchlist addition.
