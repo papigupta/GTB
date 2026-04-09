@@ -13,13 +13,9 @@ When the user sends a plain text message that is a movie, TV show, documentary, 
 python3 ~/.openclaw/workspace/skills/watchlist/scripts/watchlist.py add "<TITLE>" "<TYPE>" "<CATEGORY>" "<NOTE>"
 
 - TYPE: film, series, documentary, or anime
-- CATEGORY: Default to watch_together. ONLY use watch_alone for genuinely dark, disturbing, heavy horror, extreme violence, or deeply sad films (e.g. Requiem for a Dream, Hereditary, Se7en, The Road, Martyrs). If in doubt, it's watch_together.
+- CATEGORY: **watch_together** unless the title is clearly one of these: psychological horror, extreme violence, torture, deeply depressing/nihilistic, body horror, or disturbing content that would ruin a date night. Only films like Se7en, Requiem for a Dream, Hereditary, The Road, Irreversible, A Serbian Film, Martyrs, Come and See qualify as **watch_alone**. Romcoms, comedies, dramas, thrillers, action, sci-fi, adventure, documentaries, animation, teen movies = **watch_together**. When in doubt = **watch_together**.
 - NOTE: one-line spoiler-free description
 
-Example:
-python3 ~/.openclaw/workspace/skills/watchlist/scripts/watchlist.py add "Oppenheimer" "film" "watch_alone" "Epic biographical thriller about the atomic bomb"
-
-Do NOT ask, discuss, or recommend. Just add and confirm.
 
 ## Showing the list
 When the user says "watchlist", "what should I watch", "reccos", "kuch dekhna hai", etc:
